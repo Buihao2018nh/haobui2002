@@ -1,0 +1,84 @@
+  /* ----ý nghĩa max-width: dưới 740: < 740px*/
+  @media (max-width: 46.1875em){
+    #header{
+        overflow: hidden;
+    }
+    #header .modbile-menu{
+         display: block;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    /* ---------------nav-------- */
+    #nav {
+        display: block;
+        
+    }
+    
+    #nav li{
+        display: block;
+        cursor: pointer;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav .subnav{
+        position: initial; /* trả về mặt định */
+        background: rgb(34, 34, 34);
+       
+    }
+    #nav .subnav a{
+        color: whitesmoke;
+        padding: 0px 40px;
+        
+    }
+    /* ---------------content-------- */
+    #content .member-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+   
+    }
+    #content .member-item{
+       width: 100%;
+        margin-top: 30px;
+    }
+    #content .item-img{
+        width: 60%;
+    } 
+    /* ---------------places-------- */
+    .places-item{
+        width: 100%;
+    }
+    /* ---------slider--------- */
+ 
+    /* ------------- */
+    .s-full-width,
+    .col-half,
+    .s-col-full{
+        width: 100% !important;
+        padding-right: 1px;
+    }
+  
+}
+/*         tablet: >=740px & < 1024px */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    
+    .contact-from .form-control {
+        margin-top: 5px;
+    }
+/* ----ý nghĩa min-width: trên 1024 hoặc bằng 1024 PC:  >= 1024px*/
+}
+@media (min-width: 64em){
+ 
+}
+
+/* viết trung với nhau vì có những nội dung gần giống mobile and tablet */
+@media (max-width: 63.9375em){
+
+}
+/* chỉnh để cho phù hợp với từng loại màng hình
+PC:  >= 1024px
+tablet: >=740px & < 1024px
+mobile: < 740px
+*/

@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.row{
+    
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: " ";
+    display: block;
+    clear: both;
+
+}
+.col-third{
+    width: 100%;
+}
+.mt-16{
+    margin-top: 16px;
+}
+
+.col{
+     float: left;
+     padding-left: 8px;
+     padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+#header{
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background:rgb(19, 22, 24);
+    position: fixed;
+}
+#nav{
+    display: inline-block;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+   list-style-type: none;
+    position: relative;
+    padding-left: 0;
+ 
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+    display: block;
+}
+
+#nav li a:hover{
+    width: 100%;
+    background: white;
+    color: black;
+    display: inline-block;
+    transition: all 0.3s;
+}
+#nav li:hover .subnav{
+    display: block;
+
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background:whitesmoke;
+}
+#nav .subnav a{
+    color: black;
+    
+}
+#nav .subnav li a:hover{
+     margin: auto;
+     background: rgb(194, 192, 189);
+     transition: all 0.3s;
+     padding: 0 20px;
+}
+/* -----------search end menu--------- */
+#header .modbile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .modbile-menu,
+#header .search-btn{
+     float: right;
+     padding: 0px 16px;
+     cursor: pointer;
+     
+}
+#header .search-btn:hover{
+    background: salmon;
+}
+#header .modbile-menu:hover{
+      background: gray;
+}
+#header .menu-icon, 
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    
+}
+#slider{
+    margin-top: 46px;
+ 
+
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+.text-footer{
+      margin-top: 25px;
+}
+/* ------------content---------- */
+#content .content-selection{
+      width: 800px;
+      max-width: 100%;
+      margin: 64px 0px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 20px;
+      padding-left: 20px;
+}
+#slider img{
+    width: 100%;
+}
+#content .selection-heading{
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 4px; /*khoản cách của chữ*/
+}
+#content .selection-sub-heading{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+#content .member-list{
+    margin-top: 48px;
+    display: flex;
+    justify-content:space-between;
+}
+    
+#content .member-name{
+    text-align: center;
+    
+}
+#content .item-img{
+    border-radius: 10px; 
+    width: 154px;
+    margin-top: 15px;
+    
+}
+/* tour selection   */
+#tour-selection{
+     padding-top: 20px;
+     padding-bottom: 20px;
+    background: rgb(17, 17, 17);
+    color: white;
+}
+.ticket-list{
+    background: white;
+    color: black;
+    list-style-type: none;
+    margin-top: 35px;
+}
+.ticket-list li {
+    font-size: 15px;
+    padding: 12px 15px;
+    border-bottom: 1px solid gray;
+    
+}
+
+.ticket-list .Sold-out{
+    padding: 8px;
+    background: #f44336;
+    color: wheat;
+    margin-left: 16px;
+   
+}
+
+.ticket-list .quanlity{
+    float: right;
+    background: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: wheat;
+    text-align: center;
+    margin-top: -4px;
+    line-height: 24px;
+}
+
+/* ---------places----------- */
+.places-list{
+   margin-top: 16px;
+   margin-bottom: 48px;
+}
+.places-item{
+    width: 33.33333%; 
+    float: left;
+}
+.places-img{
+    width: 100%;
+    display: block;
+}
+.places-img:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.places-body{
+     background: white;
+     color: #000;
+     padding: 16px;
+     font-size: 15px;
+}
+.places-heading{
+     font-size: 15px;
+}
+.places-time{
+   margin-top: 15px;
+   color: #757575;
+}
+.places-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.places-btn{
+    text-decoration: none;
+    padding: 10px;
+    background: #000;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.places-btn:hover{
+    background: white;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ---------MODAL----------- */
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    background: #fff;
+    width: 800px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalfade ease .4s;
+}
+.modal-header{
+    background: #009688;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     font-size: 30px;
+     color: #fff;
+    height: 130px;
+  
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#modal-tikets-pay{
+    width: 100%;
+    padding: 13px;
+    background: #009688;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+#modal-tikets-pay:hover{
+    background: #92e7df;
+    color:black;
+}
+.modal-footer{
+    padding: 16px;
+    float: right;
+}
+
+
+
+/* -----------contact --------*/
+.contact-form{
+    margin-top: 40px;
+    
+}
+.contro-info{
+   font-size: 18px;
+   line-height: 1.6;
+}
+.contro-info i[class*="fas"]{
+    width: 30px;
+}
+.contact-from .form-control{
+    display: block;
+    width: 100%;
+    margin-top: 11px;
+    padding: 9px;
+}
+.submit-contect{
+    margin-top: 16px;
+    float: right;
+    background: black;
+    color: wheat;
+    border: 1px solid #fff;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+.submit-contect:hover{
+    background: gray;
+    color: white;
+
+}
+/* ----------map-------- */
+.map img{
+    width: 100%;
+  }
+/* ---------footer---------- */ 
+#footer{
+    padding: 64px 16px;
+    text-align: center  ;
+}
+.icon-list-footer i{
+    color: rgb(17, 17, 17);
+    font-size: 25px;
+}
+.icon-list-footer i:hover{
+    color: gray;
+}
+.end-footer{
+    margin-top: 20px;
+}
+    /* ------keyfram làm đồ họa cho chuyển động linh hoạt đẹp hơn----------*/
+    @keyframes modalfade{
+        from{
+            opacity: 0;
+            transform: translateY(-227px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+  
